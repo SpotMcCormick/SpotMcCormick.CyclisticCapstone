@@ -8,7 +8,7 @@ When I recieve the data the first thing I had to do was examine it and clean it.
  
  After that I decided to UNION all the data together so I could work on one table to figure out my descriptive statistics. The code consisted of this 
  
- *"######Union all start. cleaning data from over a year to figure our evening hours for casuals vs. members
+ *######Union all start. cleaning data from over a year to figure our evening hours for casuals vs. members
 
 *SELECT started_at, ended_at, member_casual, cast(started_at AS time) as time_start, cast(ended_at As time) as end_time 
  FROM `dulcet-hulling-375416.cyclistic.dec_2022` `dulcet-hulling-375416.cyclistic.nov_2022` 
