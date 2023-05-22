@@ -39,7 +39,7 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 (
 SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
-)
+)*
  
  Which was 23:52 for all overall riders
  
@@ -51,7 +51,7 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 (
 SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)
+)*
 
 AND
 
@@ -61,7 +61,7 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 (
 SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)
+)*
 
 
 Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 26:32
