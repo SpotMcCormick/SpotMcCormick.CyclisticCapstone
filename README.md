@@ -35,13 +35,13 @@ SELECT started_at, ended_at, member_casual, cast(started_at AS time) as start_ti
 Then to find the average I wrote this 
   
   
-  *"select avg(difference_in_time) as average
+  *select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
 (SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
 )"*
  
- Which was 23 minutes and 52 seconds for all overall riders
+ Which was 23:52 for all overall riders
  
  Then I wanted to figure out the average of each type of rider so I wrote this code
 
@@ -65,7 +65,7 @@ FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
 )"*
 
 
-Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 17:26
+Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 26:32
  
 From there I used the WEEKDAY function in excel to extract the day of each timestamp because I felt that was valuable data. 
  
