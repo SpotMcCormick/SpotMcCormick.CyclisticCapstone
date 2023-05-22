@@ -45,7 +45,7 @@ FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
  
  Then I wanted to figure out the average of each type of rider so I wrote this code
 
-*select avg(difference_in_time) as average
+select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "member" limit 1000
 (
