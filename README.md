@@ -8,7 +8,7 @@ SELECT cast(rideable_type AS string) as rideable_type, cast( started_at AS time)
  
  After that I decided to UNION all the data together so I could work on one table to figure out my descriptive statistics. The code consisted of this 
  
- ######Union all start. cleaning data from over a year to figure our evening hours for casuals vs. members
+ "######Union all start. cleaning data from over a year to figure our evening hours for casuals vs. members
 
 SELECT started_at, ended_at, member_casual, cast(started_at AS time) as time_start, cast(ended_at As time) as end_time 
  FROM `dulcet-hulling-375416.cyclistic.dec_2022` `dulcet-hulling-375416.cyclistic.nov_2022` 
@@ -29,7 +29,7 @@ SELECT started_at, ended_at, member_casual, cast(started_at AS time) as time_sta
 SELECT started_at, ended_at, member_casual, cast(started_at AS time) as start_time, cast(ended_at As time) as end_time 
   from `dulcet-hulling-375416.cyclistic.feb_2022` `dulcet-hulling-375416.cyclistic.jan_2022`
   
-  ########end of union all
+  ########end of union all"
   
   Then to find the average I wrote this 
   
@@ -45,23 +45,23 @@ FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
  Then I wanted to figure out the average of each type of rider so I wrote this code
 
 
-select avg(difference_in_time) as average
+"select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "member" limit 1000
 
 (SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)
+)"
 
-and 
+AND
 
-select avg(difference_in_time) as average
+"select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "casual" limit 1000
 
 (SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)
+)"
 
 
 Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 17:26
