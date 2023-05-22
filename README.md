@@ -37,7 +37,9 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 (SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
 )
- which was 23 minutes and 52 seconds for all overall riders
+ 
+ Which was 23 minutes and 52 seconds for all overall riders
+ 
  Then I wanted to figure out the average of each type of rider so I wrote this code
 
 
@@ -59,11 +61,12 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
 )
 
-where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 17:26
+
+Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 17:26
  
- From there I used the WEEKDAY function in excel to extract the day of each timestamp because I felt that was valuable data. 
+From there I used the WEEKDAY function in excel to extract the day of each timestamp because I felt that was valuable data. 
  
- After I gathered all the information I needed I built a dashbaord on tableau to prevent my findings to stakeholders. 
+After I gathered all the information I needed I built a dashbaord on tableau to prevent my findings to stakeholders. 
 
  
 ![Dashboard 1 (2)](https://github.com/SpotMcCormick/SpotMcCormick.CyclisticCapstone/assets/132832823/5c79a15b-77af-4311-97af-9567048a1269)
