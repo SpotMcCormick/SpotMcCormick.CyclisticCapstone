@@ -39,11 +39,11 @@ from `dulcet-hulling-375416.cyclistic.days_2022`,
 (
 SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
-)*
+)
  
  Which was 23:52 for all overall riders
  
- Then I wanted to figure out the average of each type of rider so I wrote this code
+ Then I wanted to figure out the average of each type of rider so I wrote this code,
 
 *select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
