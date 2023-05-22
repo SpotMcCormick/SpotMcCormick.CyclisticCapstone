@@ -58,10 +58,10 @@ AND
 *select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "casual" limit 1000
-*(
-*SELECT  ended_at-started_at as difference_in_time
+(
+SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)"*
+)
 
 
 Where I found out casuals had and avearge ride time of 10:18 and members had a ride time of 26:32
