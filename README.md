@@ -50,13 +50,13 @@ FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "member" limit 1000
 
-(SELECT  ended_at-started_at as difference_in_time
+*(SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022`  limit 1000
-)"*
+)
 
 AND
 
-*"select avg(difference_in_time) as average
+*select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
  where member_casual = "casual" limit 1000
 
