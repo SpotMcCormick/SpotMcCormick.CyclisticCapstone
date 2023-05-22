@@ -31,14 +31,15 @@ SELECT started_at, ended_at, member_casual, cast(started_at AS time) as start_ti
   
   ########end of union all"
   
-  Then to find the average I wrote this 
+  
+Then to find the average I wrote this 
   
   
-  select avg(difference_in_time) as average
+  "select avg(difference_in_time) as average
 from `dulcet-hulling-375416.cyclistic.days_2022`,
 (SELECT  ended_at-started_at as difference_in_time
 FROM `dulcet-hulling-375416.cyclistic.days_2022` limit 1000
-)
+)"
  
  Which was 23 minutes and 52 seconds for all overall riders
  
